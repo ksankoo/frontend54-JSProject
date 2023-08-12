@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'IntroBold';
+    src: url(/assets/fonts/IntroBold.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: 'IntroBook';
+    src: url(/assets/fonts/IntroBook.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: 'IntroRegular';
+    src: url(/assets/fonts/IntroRegular.ttf) format(ttf);
+}
+
 /* HEADER */
 
 
