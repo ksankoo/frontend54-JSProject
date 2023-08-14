@@ -1,96 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/normalize.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <link rel="stylesheet" href="./assets/normalize.css" />
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a href="index.html" class="header__top-logo"
+            ><img src="./assets/image/logo.svg" alt="logo"
+          /></a>
+          <div class="header__menu">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Подбор товара</a></li>
+              <li><a href="#">Наша команда</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Корзина</a></li>
+              <li>
+                <a href=""
+                  ><img src="./assets/image/icon_basket.svg" alt="basket"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-</head>
-
-<body>
-  <header class="header"></header>
-
-  <main>
-    <div class="block1-toShopping">blah blah</div>
-    <div class="block2-catalog"></div>
-
-    <!--АняБ, переиспользуем h2-header, all__paragraf -->
-    <div class="block3-aboutUs">
-      <img class="block3image2" src="./assets/image/block3image2.png" alt="block3image2">
-      <div class="block3cont1">
-        <h2 class="h2-header">Пара слов о нас</h2>
-        <p class="all__paragraf">Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через спорт мы
-          можем менять жизни. В том
-          числе с помощью воодушевляющих историй спортсменов. Чтобы помочь тебе подняться и двигаться вперед.</p>
-        <img class="block3image3" src="./assets/image/block3image3.png" alt="block3image3">
+        <div class="header__text">
+          <div class="header__text-background"><p>SneakMax</p></div>
+          <h1 class="header__h1">
+            Кроссовки известных брендов с доставкой по России и СНГ
+          </h1>
+          <p class="header__subtitle">
+            Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и
+            многие другие по низким ценам
+          </p>
+          
+            <a href="#" class="header__btn-buy-link">Перейти к покупкам</a>
+          </div>
+        </div>
       </div>
-      <img class="block3image1" src="./assets/image/block3image1.png" alt="block3image1">
-    </div>
+    </header>
+    <main>
+      <div class="block1-toShopping">blah blah</div>
+      <div class="block2-catalog"></div>
 
-    <!--АняБ, переиспользуем h2-header, h3-header, all__paragraf-->
-    <div class="block4-perfectPair">
-
-      <h2 class="h2-header">Мы подберем идеальную пару для вас</h2>
-      <p class="all__paragraf block4-p">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас
-        моделями</p>
-      <img src="./assets/image/block4imageBorder.png" alt="block4imageBorder">
-      <h3 class="h3-header">Какой тип кроссовок рассматриваете?</h3>
-
-      <div class="block4-container-photo">
-
-        <div class="block4-container-photo__mini">
-          <img class="block4image1" src="./assets/image/block4image.png" alt="block4image1">
-          <input type="checkbox" class="block4__checkbox" value="кеды">
+      <!--АняБ, переиспользуем h2-header, all__paragraf -->
+      <div class="block3-aboutUs">
+        <img
+          class="block3image2"
+          src="./assets/image/block3image2.png"
+          alt="block3image2"
+        />
+        <div class="block3cont1">
+          <h2 class="h2-header">Пара слов о нас</h2>
+          <p class="all__paragraf">
+            Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через
+            спорт мы можем менять жизни. В том числе с помощью воодушевляющих
+            историй спортсменов. Чтобы помочь тебе подняться и двигаться вперед.
+          </p>
+          <img
+            class="block3image3"
+            src="./assets/image/block3image3.png"
+            alt="block3image3"
+          />
         </div>
-
-        <div class="block4-container-photo__mini">
-          <img class="block4image1" src="./assets/image/block4image.png" alt="block4image1">
-          <input type="checkbox" class="block4__checkbox" value="кеды">
-        </div>
-
-        <div class="block4-container-photo__mini">
-          <img class="block4image1" src="./assets/image/block4image.png" alt="block4image1">
-          <input type="checkbox" class="block4__checkbox" value="кеды">
-        </div>
-
-        <div class="block4-container-photo__mini">
-          <img class="block4image1" src="./assets/image/block4image.png" alt="block4image1">
-          <input type="checkbox" class="block4__checkbox" value="кеды">
-        </div>
-
-        <div class="block4-container-photo__mini">
-          <img class="block4image1" src="./assets/image/block4image.png" alt="block4image1">
-          <input type="checkbox" class="block4__checkbox" value="кеды">
-        </div>
-
-        <div class="block4-container-photo__mini">
-          <img class="block4image1" src="./assets/image/block4image.png" alt="block4image1">
-          <input type="checkbox" class="block4__checkbox" value="кеды">
-        </div>
-
-      </div>
-      <img src="./assets/image/block4imageBorder.png" alt="block4imageBorder">
-
-      <div class="block4__buttonChange">
-        <p class="all__paragraf">1 из 3</p>
-        <button class="block4-button">Следующий шаг</button>
+        <img
+          class="block3image1"
+          src="./assets/image/block3image1.png"
+          alt="block3image1"
+        />
       </div>
 
-    </div>
+      <!--АняБ, переиспользуем h2-header, h3-header, all__paragraf-->
+      <div class="block4-perfectPair">
+        <h2 class="h2-header">Мы подберем идеальную пару для вас</h2>
+        <p class="all__paragraf block4-p">
+          Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для
+          вас моделями
+        </p>
+        <img
+          src="./assets/image/block4imageBorder.png"
+          alt="block4imageBorder"
+        />
+        <h3 class="h3-header">Какой тип кроссовок рассматриваете?</h3>
 
-    <div class="block5-team"></div>
-    <div class="block6-faq"></div>
-    <div class="block7-contacts"></div>
-    <div class="block8-questionForm"></div>
-  </main>
+        <div class="block4-container-photo">
+          <div class="block4-container-photo__mini">
+            <img
+              class="block4image1"
+              src="./assets/image/block4image.png"
+              alt="block4image1"
+            />
+            <input type="checkbox" class="block4__checkbox" value="кеды" />
+          </div>
 
-  <footer class="footer"></footer>
+          <div class="block4-container-photo__mini">
+            <img
+              class="block4image1"
+              src="./assets/image/block4image.png"
+              alt="block4image1"
+            />
+            <input type="checkbox" class="block4__checkbox" value="кеды" />
+          </div>
 
-  <script src="index.js"></script>
-</body>
+          <div class="block4-container-photo__mini">
+            <img
+              class="block4image1"
+              src="./assets/image/block4image.png"
+              alt="block4image1"
+            />
+            <input type="checkbox" class="block4__checkbox" value="кеды" />
+          </div>
 
+          <div class="block4-container-photo__mini">
+            <img
+              class="block4image1"
+              src="./assets/image/block4image.png"
+              alt="block4image1"
+            />
+            <input type="checkbox" class="block4__checkbox" value="кеды" />
+          </div>
+
+          <div class="block4-container-photo__mini">
+            <img
+              class="block4image1"
+              src="./assets/image/block4image.png"
+              alt="block4image1"
+            />
+            <input type="checkbox" class="block4__checkbox" value="кеды" />
+          </div>
+
+          <div class="block4-container-photo__mini">
+            <img
+              class="block4image1"
+              src="./assets/image/block4image.png"
+              alt="block4image1"
+            />
+            <input type="checkbox" class="block4__checkbox" value="кеды" />
+          </div>
+        </div>
+        <img
+          src="./assets/image/block4imageBorder.png"
+          alt="block4imageBorder"
+        />
+
+        <div class="block4__buttonChange">
+          <p class="all__paragraf">1 из 3</p>
+          <button class="block4-button">Следующий шаг</button>
+        </div>
+      </div>
+
+      <div class="block5-team"></div>
+      <div class="block6-faq"></div>
+      <div class="block7-contacts"></div>
+      <div class="block8-questionForm"></div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
