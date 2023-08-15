@@ -197,3 +197,55 @@
 }
 
 /* FOOTER  */
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #444B58;
+  height: 9.3vh;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 64.3%;
+}
+.footer__logo a {
+  display: flex;
+  margin: 0;
+  font-family: 'IntroBold';
+  font-size: 1.92em;
+  color: #FFFFFF;
+  font-weight: 700;
+  list-style-type: none;
+  text-decoration: none;
+}
+.footer__menu {
+  width: 57.5%;
+}
+.footer__menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.footer__menu a {
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "introBook";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.footer__menu a::after {
+    display: block;
+    content: ""; 
+    height: 1px; 
+    width: 0%; 
+    background-color: #ffffff; 
+    transition: width 0.4s ease-in-out; 
+    }
+    .footer__menu a:hover:after,
+    .footer__menu a:focus:after {
+    width: 100%;
+    }
