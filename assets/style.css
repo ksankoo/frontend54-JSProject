@@ -134,9 +134,10 @@
 }
 /* Block 3 AboutUs*/
 .block3-aboutUs {
-  background-color: #484283;
-  display: flex;
-  max-width: 1920px;
+    background-color: #484283;
+    display: flex;
+    max-width: 1200px;
+
 }
 
 .block3cont1 {
@@ -174,9 +175,17 @@
 
 /* Block 4 PerfectPair*/
 .block4-perfectPair {
-  max-width: 1180px;
-  height: 660px;
-  background-color: rgb(247, 235, 236);
+    width: 1200px;
+    height: 800px;
+    margin: 30px auto;
+    /* padding: 30px;*/
+    display: flex;
+    /*overflow: hidden;*/
+
+    /*margin: 20px auto;*/
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .h3-header {
@@ -206,18 +215,82 @@
   padding: 15px;
 }
 
+.block4-perfectPair__container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 235, 236);
+    width: 1000px;
+    height: 700px;
+    flex-wrap: wrap;
+    margin: 50px;
+    /*justify-content: left;
+    align-items: center;*/
+
+}
+
+.block4-perfectPair__container1-photo {
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 350px;
+    justify-content: center;
+}
+
+.block4-container-photo__mini {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    /*margin-right: 10px;*/
+    padding: 15px;
+}
+
+.block4-perfectPair__container2 {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 700px;
+    margin: 50px;
+    /*justify-content: left;*/
+    /*align-items: center;*/
+    background-color: rgb(247, 235, 236);
+}
+
+.block4-perfectPair__container2-size {
+    display: flex;
+    padding: 20px;
+    /* flex-direction: column;
+    height: 200px;*/
+    justify-content: space-around;
+}
+
+.block4-perfectPair__container2-image {
+    height: 275px;
+}
+
+.block4-perfectPair__container3 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 235, 236);
+    width: 1000px;
+    height: 700px;
+    margin: 50px;
+}
+
 /*.block4__checkbox {
     align-self: left;
 }*/
 .block4__buttonChange {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
+    display: flex;
+    /*max-width: 1000px;*/
+    /* margin: 30px auto;*/
+    padding: 30px;
+    justify-content: space-between;
 }
 
-.block4-button {
-  background-color: rgb(247, 235, 236);
-  font-family: "Introbook";
+.button {
+    background-color: rgb(247, 235, 236);
+    font-family: 'Introbook';
 }
 
 /* block6-faq */
