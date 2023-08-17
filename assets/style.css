@@ -196,20 +196,87 @@
   font-family: "Introbook";
 }
 
-/* FOOTER  */
-footer{
-  display: flex;
-  justify-content: center;
-  background-color: #444B58;
-  height: 9.3vh;
+/* block6-faq */
+.block6-faq {
+  background-color: #FFFFFF;
 }
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.block6-faq__container{
+  padding: 65px 0px;
+  margin: auto;
   width: 64.3%;
 }
+details:last-child{
+  border-top: none;
+}
+.block6-faq h2{
+  color: #444B58;
+  text-align: left;
+  font-family: "IntroBold";
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+  padding: 0px 6px 41px;
+  width: 100%; 
+}
+
+details {
+  display: block;
+  max-width: 74%;
+  margin: auto;
+  padding: 30.5px 0px;
+  color: rgba(36, 36, 36, 0.5);
+  font-family: "IntroBook";
+  border-top: 1px #242424 solid;
+  border-bottom: 1px #242424 solid;
+}
+summary::marker{display:none;} 
+summary {
+  color: #242424;
+  font-family: "IntroRegular";
+  font-size: 1.27rem;
+  letter-spacing: -0.01rem;
+  margin-left: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+summary:after {  
+  content: "";
+  background: url(../assets/image/acordeeon-plus.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  transition: rotate 0.5s;
+}
+details[open] > summary:after {
+  rotate: 45deg;
+}
+.faq {
+  padding-top: 46px;
+  line-height: 1.4rem;
+  max-width: 90%;
+}
+
+
+/* FOOTER  */
+footer{
+  background-color: #444B58;
+  padding: 27px 0px;
+}
+.footer__container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: start;
+  max-width: 64.3%;
+  min-width: min-content;
+}
+
 .footer__logo a {
+  min-width: min-content;
   display: flex;
   margin: 0;
   font-family: 'IntroBold';
@@ -219,13 +286,17 @@ footer{
   list-style-type: none;
   text-decoration: none;
 }
+
 .footer__menu {
   width: 57.5%;
 }
 .footer__menu ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
+  max-width: 100%;
+  min-width: min-content;
 }
 .footer__menu a {
   color: #ffffff;
@@ -237,6 +308,7 @@ footer{
   text-decoration: none;
   letter-spacing: 0.01em;
 }
+
 .footer__menu a::after {
     display: block;
     content: ""; 
