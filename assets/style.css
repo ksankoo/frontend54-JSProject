@@ -1,22 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @font-face {
-    font-family: 'IntroBold';
-    src: url(/assets/fonts/IntroBold.ttf) format(ttf);
+  font-family: "IntroBold";
+  src: url(../assets/fonts/IntroBold.ttf) /*format(ttf)*/;
 }
 
 @font-face {
-    font-family: 'IntroBook';
-    src: url(/assets/fonts/IntroBook.ttf) format(ttf);
+  font-family: "IntroBook";
+  src: url(../assets/fonts/IntroBook.ttf) /*format(ttf)*/;
 }
 
 @font-face {
-    font-family: 'IntroRegular';
-    src: url(/assets/fonts/IntroRegular.ttf) format(ttf);
+  font-family: "IntroRegular";
+  src: url(../assets/fonts/IntroRegular.ttf) /*format(ttf)*/;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 2rem;
+  margin: auto;
 }
 
 /* HEADER */
+.header {
+  background-color: #484283;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
+}
+.header__top-logo img {
+  max-width: 100%;
+  margin: 1.25rem 0;
+}
 
+.header__menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.header__menu a {
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "introBook";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none;
+  padding-left: 1.25rem;
+}
+.header__text {
+  position: relative;
+  padding-bottom: 6.25rem;
+}
 
+.header__text-background {
+  color: rgba(255, 255, 255, 0.12);
+  font-family: "IntroBold";
+  font-size: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.header__h1 {
+  color: #ffffff;
+  font-family: "IntroRegular";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.15rem;
+  max-width: 36.25rem;
+  padding: 6.25rem 0 1.25rem;
+}
+.header__subtitle {
+  max-width: 30rem;
+  color: #ffffff;
+  font-family: "introBook";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 3.3rem;
+}
+.header__btn-buy-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "introBook";
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1.38rem 2.94rem;
+  background-color: #f14f4f;
+  border-radius: 0.25rem;
+}
 /* MAIN  */
+/* Block 2 Catalog*/
+.block2-catalog__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.25rem;
+  max-width: 35rem;
+  margin: auto;
+}
+.block2-catalog__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.block2-catalog__img {
+  width: 100%;
+  max-width: 17.5rem;
+  height: 18.3rem;
+}
+.block2-catalog__name {
+  color: #444b58;
+  font-family: "IntroBook";
+  font-size: 1rem;
+  font-weight: 400;
+}
+.block2-catalog__price {
+  width: 5.25rem;
+  font-family: "IntroRegular";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/* Block 3 AboutUs*/
+.block3-aboutUs {
+  background-color: #484283;
+  display: flex;
+  max-width: 1920px;
+}
+
+.block3cont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+
+.all__paragraf {
+  font-family: "IntroBook";
+  font-size: 16px;
+}
+
+.block3image2 {
+  width: 20%;
+  height: 20%;
+}
+
+.block3image1 {
+  width: 30%;
+  height: 30%;
+}
+
+.block3image3 {
+  align-self: flex-end;
+  padding: 20px;
+}
+
+.h2-header {
+  font-family: "IntroBold";
+  font-size: 30px;
+}
+
+/* Block 4 PerfectPair*/
+.block4-perfectPair {
+  max-width: 1180px;
+  height: 660px;
+  background-color: rgb(247, 235, 236);
+}
+
+.h3-header {
+  font-family: "introBook";
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.block4-p {
+  color: gray;
+}
+
+.block4-container-photo {
+  display: flex;
+  /*flex-direction: column;*/
+  width: 1000px;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+
+.block4-container-photo__mini {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  /*margin-right: 10px;*/
+  padding: 15px;
+}
+
+/*.block4__checkbox {
+    align-self: left;
+}*/
+.block4__buttonChange {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+
+.block4-button {
+  background-color: rgb(247, 235, 236);
+  font-family: "Introbook";
+}
+
+/* block6-faq */
+.block6-faq {
+  background-color: #FFFFFF;
+}
+.block6-faq__container{
+  padding: 65px 0px;
+  margin: auto;
+  width: 64.3%;
+}
+details:last-child{
+  border-top: none;
+}
+.block6-faq h2{
+  color: #444B58;
+  text-align: left;
+  font-family: "IntroBold";
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+  padding: 0px 6px 41px;
+  width: 100%; 
+}
+
+details {
+  display: block;
+  max-width: 74%;
+  margin: auto;
+  padding: 30.5px 0px;
+  color: rgba(36, 36, 36, 0.5);
+  font-family: "IntroBook";
+  border-top: 1px #242424 solid;
+  border-bottom: 1px #242424 solid;
+}
+summary::marker{display:none;} 
+summary {
+  color: #242424;
+  font-family: "IntroRegular";
+  font-size: 1.27rem;
+  letter-spacing: -0.01rem;
+  margin-left: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+summary:after {  
+  content: "";
+  background: url(../assets/image/acordeeon-plus.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  transition: rotate 0.5s;
+}
+details[open] > summary:after {
+  rotate: 45deg;
+}
+.faq {
+  padding-top: 46px;
+  line-height: 1.4rem;
+  max-width: 90%;
+}
 
 
 /* FOOTER  */
+footer{
+  background-color: #444B58;
+  padding: 27px 0px;
+}
+.footer__container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: start;
+  max-width: 64.3%;
+  min-width: min-content;
+}
+
+.footer__logo a {
+  min-width: min-content;
+  display: flex;
+  margin: 0;
+  font-family: 'IntroBold';
+  font-size: 1.92em;
+  color: #FFFFFF;
+  font-weight: 700;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer__menu {
+  width: 57.5%;
+}
+.footer__menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 100%;
+  min-width: min-content;
+}
+.footer__menu a {
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "introBook";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.footer__menu a::after {
+    display: block;
+    content: ""; 
+    height: 1px; 
+    width: 0%; 
+    background-color: #ffffff; 
+    transition: width 0.4s ease-in-out; 
+    }
+    .footer__menu a:hover:after,
+    .footer__menu a:focus:after {
+    width: 100%;
+    }
