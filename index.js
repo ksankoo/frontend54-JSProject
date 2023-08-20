@@ -41,3 +41,35 @@ document.querySelector('.btn-prev').addEventListener('click', function () {
     }
     sliderLine.style.left = -offset + 'px';
 });
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  ymaps.ready(init);
+  function init(){
+      // Создание карты.
+      let myMap = new ymaps.Map("map", {
+          center: [59.89, 30.37],
+          zoom: 11
+      }),
+
+      myGeoObject = new ymaps.GeoObject({
+        // Описание геометрии.
+        geometry: {
+            type: "Point",
+            coordinates: [59.89, 30.37]
+        },
+        // Свойства.
+        properties: {
+            // Контент метки.
+            iconContent: '',
+            hintContent: 'Мы здесь!'
+        }
+      }, {
+        // Опции.
+        // Иконка метки будет растягиваться под размер ее содержимого.
+        preset: 'islands#blackDotIconWithCaption',
+        draggable: false
+      });
+      myMap.geoObjects
+        .add(myGeoObject)
+  }
+});
