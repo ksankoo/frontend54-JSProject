@@ -1,26 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="/assets/normalize.css">
-</head>
-<body>
-    <header>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="./assets/style.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/normalize.css" />
 
-    </header>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=e0a9ddc8-5f8f-4ccd-80bf-c2af660a4880&lang=ru_RU"
+			type="text/javascript"></script>
+	</head>
 
-    <main>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<a
+						href="index.html"
+						class="header__top-logo"
+						><img
+							src="./assets/image/logo.svg"
+							alt="logo"
+					/></a>
+					<div class="header__menu">
+						<ul>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Подбор товара</a></li>
+							<li><a href="#">Наша команда</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Корзина</a></li>
+							<li>
+								<a href=""
+									><img
+										src="./assets/image/icon_basket.svg"
+										alt="basket"
+								/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-    </main>
+				<div class="header__text">
+					<div class="header__text-background">SneakMax</div>
+					<h1 class="header__h1">Кроссовки известных брендов с доставкой по России и СНГ</h1>
+					<p class="header__subtitle">
+						Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким
+						ценам
+					</p>
 
-    <footer>
+					<a
+						href="#"
+						class="header__btn-buy-link"
+						>Перейти к покупкам</a
+					>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="block1-toShopping">blah blah</div>
+			<div class="container"><div class="block2-catalog"></div></div>
 
-    </footer>
+			<!--АняБ, переиспользуем h2-header, all__paragraf -->
+			<div class="block3-aboutUs">
+				<img
+					class="block3image2"
+					src="./assets/image/block3image2.png"
+					alt="block3image2" />
+				<div class="block3cont1">
+					<h2 class="h2-header">Пара слов о нас</h2>
+					<p class="all__paragraf">
+						Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через спорт мы можем менять жизни.
+						В том числе с помощью воодушевляющих историй спортсменов. Чтобы помочь тебе подняться и
+						двигаться вперед.
+					</p>
+					<img
+						class="block3image3"
+						src="./assets/image/block3image3.png"
+						alt="block3image3" />
+				</div>
+				<img
+					class="block3image1"
+					src="./assets/image/block3image1.png"
+					alt="block3image1" />
+			</div>
 
-    <script src="index.js"></script>
-</body>
+			<!--АняБ, переиспользуем h2-header, h3-header, all__paragraf-->
+			<div class="block4-perfectPair">
+				<div class="block4-perfectPair__container1">
+					<div class="block4-perfectPair__container1-header">
+						<h2 class="h2-header">Мы подберем идеальную пару для вас</h2>
+						<p class="all__paragraf block4-p">
+							Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями
+						</p>
+						<img
+							src="./assets/image/block4imageBorder.png"
+							alt="block4imageBorder" />
+						<h3 class="h3-header">Какой тип кроссовок рассматриваете?</h3>
+					</div>
+					<div class="block4-perfectPair__container1-photo">
+						<div class="block4-container-photo__mini">
+							<img
+								class="block4image1"
+								src="./assets/image/block4image.png"
+								alt="block4image1" />
+							<div>
+								<input
+									type="radio"
+									class="block4__checkbox"
+									id="radio1"
+									name="photo" /><label for="radio1">кеды</label>
+							</div>
+						</div>
+
+						<div class="block4-container-photo__mini">
+							<img
+								class="block4image1"
+								src="./assets/image/block4image.png"
+								alt="block4image1" />
+							<div>
+								<input
+									type="radio"
+									class="block4__checkbox"
+									id="radio2"
+									name="photo" /><label for="radio1">кеды</label>
+							</div>
+						</div>
+
+						<div class="block4-container-photo__mini">
+							<img
+								class="block4image1"
+								src="./assets/image/block4image.png"
+								alt="block4image1" />
+							<div>
+								<input
+									type="radio"
+									class="block4__checkbox"
+									id="radio3"
+									name="photo" /><label for="radio1">кеды</label>
+							</div>
+						</div>
+
+						<div class="block4-container-photo__mini">
+							<img
+								class="block4image1"
+								src="./assets/image/block4image.png"
+								alt="block4image1" />
+							<div>
+								<input
+									type="radio"
+									class="block4__checkbox"
+									id="radio4"
+									name="photo" /><label for="radio1">кеды</label>
+							</div>
+						</div>
+
+						<div class="block4-container-photo__mini">
+							<img
+								class="block4image1"
+								src="./assets/image/block4image.png"
+								alt="block4image1" />
+							<div>
+								<input
+									type="radio"
+									class="block4__checkbox"
+									id="radio5"
+									name="photo" /><label for="radio1">кеды</label>
+							</div>
+						</div>
+
+						<div class="block4-container-photo__mini">
+							<img
+								class="block4image1"
+								src="./assets/image/block4image.png"
+								alt="block4image1" />
+							<div>
+								<input
+									type="radio"
+									class="block4__checkbox"
+									id="radio6"
+									name="photo" /><label for="radio1">кеды</label>
+							</div>
+						</div>
+					</div>
+					<img
+						src="./assets/image/block4imageBorder.png"
+						alt="block4imageBorder" />
+
+					<div class="block4__buttonChange">
+						<p class="all__paragraf">1 из 3</p>
+						<button class="button btn-next">Следующий шаг</button>
+					</div>
+				</div>
+
+				<div class="block4-perfectPair__container2">
+					<div class="block4-perfectPair__container1-header">
+						<h2 class="h2-header">Мы подберем идеальную пару для вас</h2>
+						<p class="all__paragraf block4-p">
+							Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями
+						</p>
+						<img
+							src="./assets/image/block4imageBorder.png"
+							alt="block4imageBorder" />
+						<h3 class="h3-header">Какой размер вам подойдет?</h3>
+					</div>
+
+					<div class="block4-perfectPair__container2-size">
+						<input
+							type="radio"
+							name="size"
+							id="size1" /><label for="size1">менее 36</label>
+						<input
+							type="radio"
+							name="size"
+							id="size2" /><label for="size2">36-38</label>
+						<input
+							type="radio"
+							name="size"
+							id="size3" /><label for="size3">39-41</label>
+						<input
+							type="radio"
+							name="size"
+							id="size4" /><label for="size4">42-44</label>
+						<input
+							type="radio"
+							name="size"
+							id="size5" /><label for="size5">45 и больше</label>
+					</div>
+					<img
+						class="block4-perfectPair__container2-image"
+						src="./assets/image/block4image1.png"
+						alt="block4Container2image" /><br />
+
+					<img
+						src="./assets/image/block4imageBorder.png"
+						alt="block4imageBorder" />
+
+					<div class="block4__buttonChange">
+						<button class="button btn-prev">Назад</button>
+						<p class="all__paragraf">1 из 3</p>
+						<button class="button btn-next">Следующий шаг</button>
+					</div>
+				</div>
+
+				<div class="block4-perfectPair__container3">
+					<h2 class="h2-header">Мы подберем идеальную пару для вас</h2>
+					<p class="all__paragraf block4-p">
+						Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями
+					</p>
+					<img
+						src="./assets/image/block4imageBorder.png"
+						alt="block4imageBorder" />
+					<h3 class="h3-header">Уточните какие-либо моменты</h3>
+					<textarea
+						name="comments"
+						id="block4Comment"></textarea>
+
+					<img
+						src="./assets/image/block4imageBorder.png"
+						alt="block4imageBorder" />
+
+					<div class="block4__buttonChange">
+						<button class="button btn-prev">Назад</button>
+						<p class="all__paragraf">1 из 3</p>
+						<button class="button btn-next">Следующий шаг</button>
+					</div>
+				</div>
+
+				<div class="block4-perfectPair__container4">
+					<div class="block4-perfectPair__container1-header">
+						<h2 class="h2-header">Ваша подборка готова!</h2>
+						<p class="all__paragraf block4-p">
+							Оставьте свои контактные данные, чтобы бы мы могли отправить подготовленный для вас каталог
+						</p>
+						<img
+							src="./assets/image/block4imageBorder.png"
+							alt="block4imageBorder" />
+					</div>
+
+					<div class="block4-perfectPair__container4-form">
+						<form
+							action="post"
+							class="block4-perfectPair-form">
+							<h2 class="h2-header">Получить предложение</h2>
+							<p class="all__paragraf">Получите подборку подходящих для вас моделей на почту</p>
+							<br />
+							<input
+								class="container4-form"
+								type="text"
+								name="fio"
+								id="name"
+								value="Ваше имя" /><br />
+							<input
+								class="container4-form"
+								type="email"
+								name="mail"
+								id="email"
+								value="E-mail" /><br />
+							<button class="container4-btn">Отправить</button>
+						</form>
+					</div>
+
+					<div class="block4__buttonChange">
+						<button class="button btn-prev">Назад</button>
+						<p class="all__paragraf">1 из 3</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="block5-team"></div>
+
+			<!-- block6-faq -->
+			<div class="block6-faq">
+				<div class="block6-faq__container">
+					<h2>Часто задаваемые вопросы</h2>
+					<details>
+						<summary>Вопрос 1</summary>
+						<p class="faq">
+							А это ответ 1: в комплексе функционируют 6 детских садов с площадками, воспитателями и
+							всякими другими людьми
+						</p>
+					</details>
+					<details>
+						<summary>Вопрос 2</summary>
+						<p class="faq">
+							А это ответ 2: в комплексе функционируют 6 детских садов с площадками, воспитателями и
+							всякими другими людьми
+						</p>
+					</details>
+				</div>
+			</div>
+
+			<div class="block7-contacts">
+				<div class="block7-contacts__container">
+					<div class="block7-contacts__contacts">
+						<h2>Контакты</h2>
+						<div class="block7-contacts__contacts__mainOffice">
+							<p class="block7-contacts__contacts_officeName">ГЛАВНЫЙ ОФИС</p>
+							<p class="block7-contacts__contacts_officeNumber">+7 800 789 89 89</p>
+							<p class="block7-contacts__contacts_officeAdress">
+								г. Санкт-Петербург, Комсомольская, 43 к1
+							</p>
+						</div>
+						<div class="block7-contacts__contacts__salesOffice">
+							<p class="block7-contacts__contacts_officeName">ОТДЕЛ ПРОДАЖ</p>
+							<p class="block7-contacts__contacts_officeNumber">+7 800 789 89 89</p>
+							<p class="block7-contacts__contacts_officeAdress">
+								г. Санкт-Петербург, Комсомольская, 43 к1
+							</p>
+						</div>
+						<div class="block7-contacts__icons">
+							<div>
+								<a href="#"
+									><img
+										class="block7-contacts__icons_icon"
+										src="/assets/image/VK.svg"
+										alt=""
+								/></a>
+							</div>
+							<div>
+								<a href="#"
+									><img
+										class="block7-contacts__icons_icon"
+										src="/assets/image/Instagram.svg"
+										alt=""
+								/></a>
+							</div>
+						</div>
+					</div>
+
+					<div id="map"></div>
+				</div>
+			</div>
+			<div class="block8-questionForm">
+				<div class="block8-questionForm__container">
+					<div class="form-container">
+						<h2>Есть вопросы?</h2>
+						<p>Заполните форму и наш менеджер свяжется с вами</p>
+						<form action="">
+							<input
+								type="text"
+								id="form__name"
+								placeholder="Ваше имя"
+								required
+								minlength="2"
+								maxlength="16" />
+							<input
+								type="tel"
+								class="tel"
+								id="form__number"
+								placeholder="Номер телефона"
+								required />
+							<button id="send-user-inf">Отправить</button>
+						</form>
+					</div>
+					<div class="instagram-container">
+						<div>
+							<img
+								src="assets/image/Instagram_logo.png"
+								alt=""
+								id="insta1" />
+						</div>
+						<div class="instagram-container__fotos">
+							<img
+								src="assets/image/Block8/block8-img1.jpg"
+								alt=""
+								id="insta1" />
+							<img
+								src="assets/image/Block8/block8-img2.jpg"
+								alt=""
+								id="insta2" />
+							<img
+								src="assets/image/Block8/block8-img3.jpg"
+								alt=""
+								id="insta3" />
+							<img
+								src="assets/image/Block8/block8-img4.jpg"
+								alt=""
+								id="insta4" />
+							<img
+								src="assets/image/Block8/block8-img5.jpg"
+								alt=""
+								id="insta5" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo"><a href="">SneakMax</a></div>
+				<div class="footer__menu">
+					<ul>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Подбор товара</a></li>
+						<li><a href="#">Наша команда</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./assets/js/catalog.js"></script>
+		<script src="index.js"></script>
+	</body>
 </html>

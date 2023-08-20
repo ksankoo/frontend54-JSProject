@@ -1,7 +1,628 @@
-/* HEADER */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+@font-face {
+  font-family: "IntroBold";
+  src: url(../assets/fonts/IntroBold.ttf)
+    /*format(ttf)*/
+  ;
+}
+
+@font-face {
+  font-family: "IntroBook";
+  src: url(../assets/fonts/IntroBook.ttf)
+    /*format(ttf)*/
+  ;
+}
+
+@font-face {
+  font-family: "IntroRegular";
+  src: url(../assets/fonts/IntroRegular.ttf)
+    /*format(ttf)*/
+  ;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background-color: #484283;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
+}
+
+.header__top-logo img {
+  max-width: 100%;
+  margin: 1.25rem 0;
+}
+
+.header__menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__menu a {
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "introBook";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none;
+  padding-left: 1.25rem;
+}
+
+.header__text {
+  position: relative;
+  padding-bottom: 6.25rem;
+}
+
+.header__text-background {
+  color: rgba(255, 255, 255, 0.12);
+  font-family: "IntroBold";
+  font-size: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.header__h1 {
+  color: #ffffff;
+  font-family: "IntroRegular";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.15rem;
+  max-width: 36.25rem;
+  padding: 6.25rem 0 1.25rem;
+}
+
+.header__subtitle {
+  max-width: 30rem;
+  color: #ffffff;
+  font-family: "introBook";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 3.3rem;
+}
+
+.header__btn-buy-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "introBook";
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1.38rem 2.94rem;
+  background-color: #f14f4f;
+  border-radius: 0.25rem;
+}
 
 /* MAIN  */
+/* Block 2 Catalog*/
+.block2-catalog__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.25rem;
+  max-width: 35rem;
+  margin: auto;
+}
+
+.block2-catalog__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.block2-catalog__img {
+  width: 100%;
+  max-width: 17.5rem;
+  height: 18.3rem;
+}
+
+.block2-catalog__name {
+  color: #444b58;
+  font-family: "IntroBook";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.block2-catalog__price {
+  width: 5.25rem;
+  font-family: "IntroRegular";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* Block 3 AboutUs*/
+.block3-aboutUs {
+  background-color: #484283;
+  display: flex;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.block3cont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+
+}
+
+.all__paragraf {
+  font-family: 'IntroBook';
+  font-size: 16px;
+}
+
+.block3image2 {
+  width: 20%;
+  height: 20%;
+}
+
+.block3image1 {
+  width: 30%;
+  height: 30%;
+}
+
+.block3image3 {
+  align-self: flex-end;
+  padding: 20px;
+}
+
+.h2-header {
+  font-family: 'IntroBold';
+  font-size: 30px;
+}
+
+/*block4 - perfect pair*/
+
+.block4-perfectPair {
+  width: 1180px;
+  height: 600px;
+  padding: 30px;
+  display: flex;
+  /*overflow: hidden;*/
+  margin: 50px auto;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.h3-header {
+  font-family: 'introBook';
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.block4-p {
+  color: gray;
+}
+
+.block4-perfectPair__container1,
+.block4-perfectPair__container2,
+.block4-perfectPair__container3,
+.block4-perfectPair__container4 {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF4EE;
+  width: 1000px;
+  height: 600px;
+  margin: 50px;
+  font-family: 'IntroBook';
+  justify-content: center;
+}
+
+.block4-perfectPair__container1 {
+  flex-wrap: wrap;
+}
+
+.block4-perfectPair__container1-photo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
+  justify-content: center;
+  font-family: 'IntroBook';
+
+}
+
+.block4-container-photo__mini {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+}
+
+
+.block4-perfectPair__container2-size {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.block4-perfectPair__container2-image {
+  height: 275px;
+}
+
+
+#block4Comment {
+  width: 300px;
+  height: 100px;
+}
+
+.block4-perfectPair__container4-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  background-color: #DBBBA9;
+  color: #ffffff;
+
+}
+
+.block4-perfectPair-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container4-form {
+  color: grey;
+  width: 300px;
+  height: 50px;
+}
+
+.container4-btn {
+  width: 100px;
+  background-color: #F14F4F;
+}
+
+.block4__buttonChange {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.button {
+  background-color: rgb(247, 235, 236);
+  font-family: 'Introbook';
+}
+
+
+/* block6-faq */
+.block6-faq {
+  background-color: #FFFFFF;
+}
+
+.block6-faq__container {
+  padding: 65px 0px;
+  margin: auto;
+  width: 64.3%;
+}
+
+details:last-child {
+  border-top: none;
+}
+
+.block6-faq h2 {
+  color: #444B58;
+  text-align: left;
+  font-family: "IntroBold";
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+  padding: 0px 6px 41px;
+  width: 100%;
+}
+
+details {
+  display: block;
+  max-width: 74%;
+  margin: auto;
+  padding: 30.5px 0px;
+  color: rgba(36, 36, 36, 0.5);
+  font-family: "IntroBook";
+  border-top: 1px #242424 solid;
+  border-bottom: 1px #242424 solid;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary {
+  color: #242424;
+  font-family: "IntroRegular";
+  font-size: 1.27rem;
+  letter-spacing: -0.01rem;
+  margin-left: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+summary:after {
+  content: "";
+  background: url(../assets/image/acordeeon-plus.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  transition: rotate 0.5s;
+}
+
+details[open]>summary:after {
+  rotate: 45deg;
+}
+
+.faq {
+  padding-top: 46px;
+  line-height: 1.4rem;
+  max-width: 90%;
+}
+
+/* Block 7 */
+
+.block7-contacts {
+  background-color: #F3F6F6;
+  height: 32.2vw;
+}
+
+.block7-contacts__container {
+  margin: auto;
+  padding: 3.1vw 0 3.1vw 0;
+  width: 64.3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block7-contacts__contacts {
+  padding: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.block7-contacts__contacts__mainOffice,
+.block7-contacts__contacts__salesOffice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.block7-contacts h2{
+  color: #444B58;
+  text-align: left;
+  font-family: "IntroBold";
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+  width: 100%; 
+}
+
+.block7-contacts__contacts_officeName {
+  font-family: IntroBook;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-align: left;
+  color: #B2B5BB;
+}
+
+.block7-contacts__contacts_officeNumber {
+  font-family: IntroRegular;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444B58;
+}
+
+.block7-contacts__contacts_officeAdress {
+  font-family: IntroBook;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444B58;
+}
+
+.block7-contacts__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.block7-contacts__icons_icon {
+  width: 2.3vw;
+}
+
+#map {
+  height: 25.9vw;
+  width: 35.4vw;
+}
+
+
+
+/* block8-questionForm */
+.block8-questionForm {
+  background-color: #FFFFFF;
+}
+.block8-questionForm__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 64.3%;
+  min-width: min-content;
+  margin: auto;
+  margin-bottom: 58px;
+}
+.form-container {
+  background-color: #484283;
+  max-width: 31.8%;
+  border-radius: 3%;
+}
+.form-container h2 {
+  color: #FFFFFF;
+  font-family: 'IntroBold';
+  font-size: 1.8rem;
+  letter-spacing: 0.04rem;
+  text-align: center;
+  padding: 44.5px 0px 23px;
+}
+.form-container p {
+  max-width: 56%;
+  margin: auto;
+  text-align: center;
+  font-family: 'IntroBook';
+  color: #FFFFFF;
+  line-height: 1.4rem;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 42px;
+padding-bottom: 47px;
+}
+.form-container input {
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-radius: 3%;
+  padding: 18px 5.5%;
+  margin-bottom: 9.5px;
+  font-family: 'IntroBook';
+  font-size: 1.3rem;
+}
+.form-container input::placeholder {
+  font-family: 'IntroBook';
+}
+.form-container button {
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-radius: 3%;
+  padding: 21px 0px;
+  font-family: 'IntroRegular';
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  background-color: #f14f4f;
+}
+.instagram-container {
+  width: 56.8%;
+  height: 45.5vh;
+  margin-right: 70px;
+  text-align: center;
+}
+.instagram-container__fotos {
+  width: 100%;
+  max-height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 33px;
+}
+#insta1 {
+  grid-area: 1/1/2/2;
+}
+#insta2 {
+  grid-area: 2/1/3/2;
+}
+#insta3 {
+  grid-area: 1/2/3/4;
+}
+#insta4 {
+  grid-area: 1/4/2/5;
+}
+#insta5 {
+  grid-area: 2/4/3/5;
+}
 
 
 /* FOOTER  */
+footer {
+  background-color: #444B58;
+  padding: 27px 0px;
+}
+
+.footer__container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: start;
+  max-width: 64.3%;
+  min-width: min-content;
+}
+
+.footer__logo a {
+  min-width: min-content;
+  display: flex;
+  margin: 0;
+  font-family: 'IntroBold';
+  font-size: 1.92em;
+  color: #FFFFFF;
+  font-weight: 700;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer__menu {
+  width: 57.5%;
+}
+
+.footer__menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 100%;
+  min-width: min-content;
+}
+
+.footer__menu a {
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "introBook";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.footer__menu a::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #ffffff;
+  transition: width 0.4s ease-in-out;
+}
+
+.footer__menu a:hover:after,
+.footer__menu a:focus:after {
+  width: 100%;
+}
