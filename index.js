@@ -96,11 +96,45 @@ const btnSendUserInf = document.getElementById('send-user-inf');
 let userName;
 let userNumber;
 
-btnSendUserInf.addEventListener ('click', (event) => {
+const Users = [
+  {
+  recipients: 'anysha_s@mail.ru',
+	senderAddress: 'anysha_s@mail.ru',
+  content: {
+    subject: "Желающие купить кроссовки",
+    plainText: `Имя: ${userName} Номер телефона: ${userNumber}`,
+    html: "<html><head><title>Желающие купить кроссовки</title></head><body><div>Имя: ${userName}</div><div>Номер телефона: ${userNumber}</div></body></html>"
+  } 
+  }
+]
+const url = 'https://contoso.westus.communications.azure.com/emails:send?api-version=2023-03-31';
+let options = {
+  method: 'POST',
+  body: JSON.stringify(Users),
+  headers: {
+    "ClientCorrelationId": "123",
+    "ClientCustomHeaderName": "ClientCustomHeaderValue"
+  },
+}
+
+function getResult () {
+  fetch('https://contoso.westus.communications.azure.com/emails:send?api-version=2023-03-31')
+  .then((res) => {
+    return res.json(); 
+  })
+  .catch((error) => {
+    console.log('Ошибка. Запрос не выполнен');
+  });
+}
+btnSendUserInf.addEventListener ('click', async (event) => {
   event.preventDefault();
   userName = document.getElementById("form__name").value;
   userNumber = document.getElementById("form__number").value;
   userName = userName.toLowerCase();
   userName = userName[0].toUpperCase() + userName.slice(1);
+  getResult();
 });
+
+
+
 
